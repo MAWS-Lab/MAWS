@@ -311,7 +311,31 @@
                         style F fill:#002211,stroke:#00ff9d,stroke-width:4px,color:#fff
                 </div>
             </div>
+        </div>        <!-- FIGURE 11 — ARCHITECTURE CLOUD HYBRIDE SOUVERAINE -->
+        <div class="figure">
+            <h2>FIGURE 11 — ARCHITECTURE CLOUD HYBRIDE SOUVERAINE</h2>
+            <div class="mermaid-container">
+                <div class="mermaid">
+                    graph TD
+                        subgraph "On-Premise (Souverain)"
+                            NANASHI["👤 NANASHI Core<br/>GHOST-ALPHA Vault"]
+                            LOCAL["Workers Locaux"]
+                        end
+
+                        subgraph "Cloud Public (MUMEI)"
+                            CLOUD["Workers Cloud<br/>Split Inference ZK"]
+                        end
+
+                        NANASHI -->|"Tunnel USL-EDL<br/>AES-GCM + ε-Noise"| CLOUD
+                        CLOUD -->|"De-Noising + Vérification"| NANASHI
+
+                        style NANASHI fill:#001122,stroke:#00f2ff,stroke-width:5px,color:#fff
+                        style CLOUD fill:#002211,stroke:#00ff9d,stroke-width:4px,color:#fff
+                        style LOCAL fill:#440033,stroke:#bc13fe,stroke-width:3px
+                </div>
+            </div>
         </div>
+    
     <script>
         mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
     </script>
