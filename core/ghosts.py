@@ -54,12 +54,15 @@ class Pinky(GhostAgent):
     def __init__(self):
         super().__init__("Pinky", "Researcher", clearance_level=2)
 
-# Initialisation du Trio Janus [cite: 2026-01-25]
+# Initialisation du Trio Nanashi AI [cite: 2026-01-25]
 inky = Inky()
 pinky = Pinky()
-blinky = Blinky() # Assure-toi que l'initialisation de Blinky est bien là
+blinky = Blinky()
 
 def get_active_ghosts():
     """Retourne la liste des agents actifs sous le protocole Nanashi [cite: 2026-02-17]"""
     return [blinky, inky, pinky]
+
+
+
 
