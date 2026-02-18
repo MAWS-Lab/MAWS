@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "agents": [
+    "agents/blur-detection-v1/manifest.json",
+    "agents/real-time-ocr-v1/manifest.json"
+  ]
+}
