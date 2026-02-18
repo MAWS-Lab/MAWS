@@ -122,13 +122,14 @@
     </style>
 </head>
 <body>
-
     <header>
         <div>
             <h1>MAWS</h1>
             <div class="subtitle">Schémas du Protocole — Sovereign OS</div>
         </div>
     </header>
+
+    
 
     <div class="container">
 
@@ -293,7 +294,24 @@
         </div>
 
     </div>
-
+        <!-- FIGURE 10 — SÉCURITÉ ZERO TRUST -->
+        <div class="figure">
+            <h2>FIGURE 10 — SÉCURITÉ ZERO TRUST & GHOST-ALPHA</h2>
+            <div class="mermaid-container">
+                <div class="mermaid">
+                    flowchart TD
+                        A["👤 NANASHI / User"] --> B["🔐 Zero Trust Boundary"]
+                        B --> C["🛡️ GHOST-ALPHA Vault<br/>Total Data Confinement"]
+                        C --> D["🔗 Encrypted Tunnel<br/>AES-GCM + ε-Noise"]
+                        D --> E["🌐 MUMEI Workers<br/>Split Inference ZK"]
+                        E --> F["✅ Proof of Intelligence<br/>Consensus"]
+                        F -->|"De-Noising + Verification"| A
+                        style A fill:#001122,stroke:#00f2ff,stroke-width:4px,color:#fff
+                        style C fill:#440033,stroke:#bc13fe,stroke-width:4px,color:#fff
+                        style F fill:#002211,stroke:#00ff9d,stroke-width:4px,color:#fff
+                </div>
+            </div>
+        </div>
     <script>
         mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
     </script>
