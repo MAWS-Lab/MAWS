@@ -1,0 +1,11 @@
+/marketplace/
+├── agents/
+│   ├── agent-1-blur-detection/
+│   │   ├── manifest.json      ← description, version, author, inputs/outputs
+│   │   ├── code.py            ← l’agent lui-même
+│   │   └── icon.png
+│   └── agent-2-real-time-ocr/
+│       ├── manifest.json
+│       ├── code.py
+│       └── icon.png
+└── index.json                 ← registre central (liste de tous les agents)
