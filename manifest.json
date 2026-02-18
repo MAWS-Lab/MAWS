@@ -1,0 +1,12 @@
+{
+  "id": "blur-detection-v1",
+  "name": "Blur Detection Agent",
+  "description": "Détecte le flou sur les images et renvoie un score",
+  "author": "MAWS-Lab",
+  "version": "1.0.0",
+  "inputs": ["image:png,jpg"],
+  "outputs": ["score:float", "is_blurry:bool"],
+  "dependencies": ["opencv-python"],
+  "license": "Apache-2.0",
+  "price": "free"  // ou "0.001 MAWS" plus tard
+}
