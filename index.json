@@ -1,7 +1,26 @@
 {
-  "version": "1.0",
+  "version": "1.0.0",
+  "description": "Registre officiel des agents disponibles pour NanashiOS",
+  "last_updated": "2026-02-19",
   "agents": [
-    "agents/blur-detection-v1/manifest.json",
-    "agents/real-time-ocr-v1/manifest.json"
+    {
+      "id": "blur-detection-v1",
+      "name": "Blur Detection Agent",
+      "path": "agents/blur-detection-v1/manifest.json",
+      "tags": ["image", "quality-check", "preprocessing"]
+    },
+    {
+      "id": "ocr-v1",
+      "name": "OCR Text Extraction Agent",
+      "path": "agents/ocr-v1/manifest.json",
+      "tags": ["ocr", "text-extraction", "multimodal"]
+    },
+    {
+      "id": "sentiment-v1",
+      "name": "Sentiment Analysis Agent",
+      "path": "agents/sentiment-v1/manifest.json",
+      "tags": ["nlp", "sentiment", "text-analysis"]
+    }
+    // Ajoute ici d'autres agents si tu en as créé plus (ex. prompt-optimizer-v1)
   ]
 }
