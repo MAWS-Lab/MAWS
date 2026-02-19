@@ -9,8 +9,8 @@ NANASHI PROJECT — No name, no trace, full control (2026)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://maws-lab.github.io/MAWS/)  
 [![Diagrams](https://img.shields.io/badge/Diagrams-Mermaid-00f2ff)](https://mermaid.js.org)  
 [![Theme](https://img.shields.io/badge/Theme-Cyberpunk-ff3131)](https://github.com/MAWS-Lab/MAWS)  
-[![Discord](https://img.shields.io/badge/Discord-Join%20Community-7289DA?logo=discord&logoColor=white)](https://discord.gg/ton-serveur-discord)  <!-- Remplace par ton vrai lien Discord -->
-[![X](https://img.shields.io/badge/X-@NanashiOS-black?logo=x&logoColor=white)](https://x.com/ton-compte-x)  <!-- Remplace par ton vrai compte X -->
+[![Discord](https://img.shields.io/badge/Discord-Join%20Community-7289DA?logo=discord&logoColor=white)](https://discord.gg/ton-serveur-discord)  
+[![X](https://img.shields.io/badge/X-@NanashiOS-black?logo=x&logoColor=white)](https://x.com/NanashiOS)
 
 ## Overview
 
@@ -42,7 +42,7 @@ Consultez tous les schémas interactifs :
 ## Installation
 
 ```bash
-git clone https://github.com/MAWS-Lab/MAWS.git
+git clone https://github.com/NanashiOS-Lab/MAWS.git
 cd MAWS
 pip install -r requirements.txt
 python main.py
