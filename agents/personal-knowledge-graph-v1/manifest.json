@@ -1,0 +1,36 @@
+{
+  "id": "personal-knowledge-graph-v1",
+  "name": "Personal Knowledge Graph Agent",
+  "description": "Gère et interroge un graphe de connaissances personnel local (mémoire souveraine longue durée). Utile pour agents qui se souviennent de l’utilisateur sans cloud.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "inputs": [
+    {
+      "name": "query",
+      "type": "string",
+      "description": "Question ou information à ajouter/rechercher"
+    },
+    {
+      "name": "action",
+      "type": "string",
+      "description": "add / query / update",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "response",
+      "type": "string",
+      "description": "Réponse ou confirmation"
+    },
+    {
+      "name": "related_nodes",
+      "type": "array[string]",
+      "description": "Nœuds liés dans le graphe"
+    }
+  ],
+  "dependencies": ["networkx>=3.0.0", "neo4j>=5.0.0"],
+  "price": "free",
+  "tags": ["knowledge-graph", "memory", "personal-data", "sovereign", "long-term-memory"]
+}
