@@ -1,0 +1,30 @@
+{
+  "id": "topologique-v1",
+  "name": "Topology Analyzer Agent",
+  "description": "Analyse et manipule des structures topologiques (graphes, réseaux, relations spatiales) dans données, code ou images. Utile pour agents qui travaillent sur réseaux neuronaux ou graphes de connaissances.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "inputs": [
+    {
+      "name": "data",
+      "type": "object or string",
+      "description": "Données topologiques (graphe, image, code, etc.)"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "analysis",
+      "type": "string",
+      "description": "Analyse topologique complète (connectivité, clusters, chemins critiques)"
+    },
+    {
+      "name": "visualization",
+      "type": "image",
+      "description": "Graphe visualisé (optionnel)"
+    }
+  ],
+  "dependencies": ["networkx>=3.0.0", "matplotlib>=3.7.0"],
+  "price": "free",
+  "tags": ["topology", "graph-analysis", "networks", "spatial", "advanced"]
+}
