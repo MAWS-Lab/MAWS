@@ -1,0 +1,35 @@
+{
+  "id": "fake-news-detector-v1",
+  "name": "Fake News Detector Agent",
+  "description": "Analyse un texte ou article pour détecter fake news, désinformation et manipulation. Score de fiabilité + sources suspectes. Fonctionne localement.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "inputs": [
+    {
+      "name": "text",
+      "type": "string",
+      "description": "Texte ou article à analyser"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "is_fake",
+      "type": "bool",
+      "description": "True si fake news probable"
+    },
+    {
+      "name": "reliability_score",
+      "type": "float",
+      "description": "Score de fiabilité (0-1)"
+    },
+    {
+      "name": "reasons",
+      "type": "array[string]",
+      "description": "Raisons principales du score"
+    }
+  ],
+  "dependencies": ["transformers>=4.20.0", "torch>=2.0.0", "nltk>=3.7"],
+  "price": "free",
+  "tags": ["fake-news", "fact-checking", "disinformation", "privacy", "anti-manipulation"]
+}
