@@ -1,0 +1,35 @@
+{
+  "id": "contract-auditor-v1",
+  "name": "Contract Auditor Agent",
+  "description": "Analyse et audite des contrats légaux ou intelligents pour détecter clauses risquées, incohérences, lacunes juridiques. Utile pour inventeurs, startups et avocats.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "inputs": [
+    {
+      "name": "contract_text",
+      "type": "string",
+      "description": "Texte complet du contrat à auditer"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "risk_report",
+      "type": "string",
+      "description": "Rapport d’audit détaillé"
+    },
+    {
+      "name": "risk_score",
+      "type": "float",
+      "description": "Score de risque global (0-1)"
+    },
+    {
+      "name": "problematic_clauses",
+      "type": "array[string]",
+      "description": "Clauses problématiques détectées"
+    }
+  ],
+  "dependencies": ["nltk>=3.7", "spacy>=3.0.0"],
+  "price": "free",
+  "tags": ["legal", "contract-analysis", "audit", "smart-contract", "risk-detection"]
+}
