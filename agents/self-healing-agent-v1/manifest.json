@@ -1,0 +1,41 @@
+{
+  "id": "self-healing-agent-v1",
+  "name": "Self Healing Agent",
+  "description": "Détecte ses propres erreurs, bugs ou dysfonctionnements et tente de les corriger automatiquement. Vrai agent autonome et résilient.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "inputs": [
+    {
+      "name": "error_log",
+      "type": "string",
+      "description": "Log d’erreur ou symptôme détecté"
+    },
+    {
+      "name": "current_state",
+      "type": "string",
+      "description": "État actuel de l’agent",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "diagnosis",
+      "type": "string",
+      "description": "Diagnostic du problème"
+    },
+    {
+      "name": "fix_applied",
+      "type": "bool",
+      "description": "True si correction appliquée"
+    },
+    {
+      "name": "new_state",
+      "type": "string",
+      "description": "Nouvel état après réparation"
+    }
+  ],
+  "dependencies": ["astor>=0.8.0", "traceback2>=1.4.0"],
+  "price": "free",
+  "tags": ["self-healing", "autonomy", "resilience", "debug", "agent-core"]
+}
