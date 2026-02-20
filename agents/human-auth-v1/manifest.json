@@ -1,0 +1,30 @@
+{
+  "id": "human-auth-v1",
+  "name": "Human Authenticity Agent",
+  "description": "Vérifie si un texte est écrit par un humain ou généré par IA (score 0-1). Utile pour anti-deepfake, vérification emails, contenus authentiques. Local et sovereign.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "inputs": [
+    {
+      "name": "text",
+      "type": "string",
+      "description": "Texte à vérifier"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "authenticity",
+      "type": "string",
+      "description": "Humain / IA / Incertain"
+    },
+    {
+      "name": "score",
+      "type": "float",
+      "description": "Score d’authenticité humaine (0 = IA → 1 = humain)"
+    }
+  ],
+  "dependencies": ["transformers>=4.20.0", "torch>=2.0.0"],
+  "price": "free",
+  "tags": ["authenticity", "anti-ai", "privacy", "text-detection", "deepfake"]
+}
