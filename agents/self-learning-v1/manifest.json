@@ -1,0 +1,36 @@
+{
+  "id": "self-learning-v1",
+  "name": "Self Learning Agent",
+  "description": "Agent d’apprentissage autonome. Apprend de nouvelles tâches à partir d’exemples, mémorise les préférences de l’utilisateur localement, s’améliore avec le temps sans aucun envoi de données.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "inputs": [
+    {
+      "name": "task_example",
+      "type": "string",
+      "description": "Exemple de tâche à apprendre"
+    },
+    {
+      "name": "user_feedback",
+      "type": "string",
+      "description": "Feedback de l’utilisateur (positif/négatif)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "learned_behavior",
+      "type": "string",
+      "description": "Comportement appris et adapté"
+    },
+    {
+      "name": "confidence",
+      "type": "float",
+      "description": "Niveau de confiance dans l’apprentissage (0-1)"
+    }
+  ],
+  "dependencies": ["transformers>=4.20.0", "torch>=2.0.0"],
+  "price": "free",
+  "tags": ["learning", "self-improvement", "adaptation", "memory", "autonomy", "sovereign"]
+}
