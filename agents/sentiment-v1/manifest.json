@@ -1,0 +1,30 @@
+{
+  "id": "sentiment-v1",
+  "name": "Sentiment Analysis Agent",
+  "description": "Analyse le sentiment d’un texte (positif, neutre, négatif) avec VADER. Utile pour avis, tweets, commentaires, feedback.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "inputs": [
+    {
+      "name": "text",
+      "type": "string",
+      "description": "Texte à analyser"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "sentiment",
+      "type": "string",
+      "description": "Positif / Neutre / Négatif"
+    },
+    {
+      "name": "score",
+      "type": "float",
+      "description": "Score de sentiment (-1 négatif à +1 positif)"
+    }
+  ],
+  "dependencies": ["vaderSentiment>=3.3.0"],
+  "price": "free",
+  "tags": ["nlp", "sentiment-analysis", "text-processing"]
+}
