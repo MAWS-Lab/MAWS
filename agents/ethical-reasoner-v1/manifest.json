@@ -1,0 +1,41 @@
+{
+  "id": "ethical-reasoner-v1",
+  "name": "Ethical Reasoner Agent",
+  "description": "Aide à prendre des décisions avec un raisonnement éthique clair. Analyse les conséquences, respect des principes moraux et alignement avec les valeurs de l’utilisateur.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "inputs": [
+    {
+      "name": "decision_context",
+      "type": "string",
+      "description": "Description de la situation et de la décision à prendre"
+    },
+    {
+      "name": "user_values",
+      "type": "string",
+      "description": "Valeurs morales de l’utilisateur (facultatif)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "ethical_analysis",
+      "type": "string",
+      "description": "Analyse éthique détaillée"
+    },
+    {
+      "name": "recommended_action",
+      "type": "string",
+      "description": "Action recommandée"
+    },
+    {
+      "name": "ethical_score",
+      "type": "float",
+      "description": "Score éthique de la décision (0-1)"
+    }
+  ],
+  "dependencies": ["transformers>=4.20.0", "torch>=2.0.0"],
+  "price": "free",
+  "tags": ["ethics", "reasoning", "moral-decision", "philosophy", "autonomy"]
+}
