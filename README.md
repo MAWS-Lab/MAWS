@@ -5,7 +5,10 @@ Production-ready framework featuring native Semantic Caching, Secure Sandboxed E
 
 NANASHI PROJECT — No name, no trace, full control (2026)
 
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-yellow.svg)](https://opensource.org/licenses/Apache-2.0)  
+NanashiOS est sous BSL 1.1 depuis le 21 février 2026.
+Commercial use interdit jusqu’au 20 février 2030 sans licence payante.
+Le nom "NanashiOS", logo et slogan sont protégés (marque en cours de dépôt).
+Toute copie ou exploitation sans accord sera poursuivie.
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://nanashios-lab.github.io/NanashiOS/)  
 [![Diagrams](https://img.shields.io/badge/Diagrams-Mermaid-00f2ff)](https://mermaid.js.org)  
 [![Theme](https://img.shields.io/badge/Theme-Cyberpunk-ff3131)](https://github.com/MAWS-Lab/MAWS)  
