@@ -1,4 +1,6 @@
 {
+  "copyright": "© 2026 NanashiOS-Lab. Tous droits réservés – Nom, logo, slogan protégés",
+"license": "BSL-1.1 - Commercial use restricted until 20 February 2030",
   "id": "agent-1-blur-detection-v1",
   "name": "Blur Detection Agent",
   "description": "Détecte le flou sur une image et renvoie un score de netteté (0 à 1). Utile pour filtrer les photos avant traitement.",
