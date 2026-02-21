@@ -1,0 +1,32 @@
+{
+  "id": "traduction-v1",
+  "name": "Translation Agent",
+  "description": "Traduit un texte dans plusieurs langues (offline avec modèles légers). Souveraineté : pas d’envoi à un cloud.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "BSL-1.1",
+  "license_note": "Business Source License 1.1 - Commercial use restricted until 20 February 2030",
+  "inputs": [
+    {
+      "name": "text",
+      "type": "string",
+      "description": "Texte à traduire"
+    },
+    {
+      "name": "target_lang",
+      "type": "string",
+      "description": "Langue cible (ex. fr, en, es, de, it, pt)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "translated_text",
+      "type": "string",
+      "description": "Texte traduit"
+    }
+  ],
+  "dependencies": ["transformers>=4.20.0", "torch>=2.0.0"],
+  "price": "free",
+  "tags": ["nlp", "translation", "offline", "multilingual", "sovereign"]
+}
