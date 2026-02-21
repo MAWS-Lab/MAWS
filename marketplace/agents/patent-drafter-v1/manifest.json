@@ -1,0 +1,37 @@
+{
+  "id": "patent-drafter-v1",
+  "name": "Patent Drafter Agent",
+  "description": "Rédige ou vérifie des descriptions de brevets conformes aux exigences OEB (EPO) et INPI (France). Vérifie brevetabilité, nouveauté et activité inventive.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "BSL-1.1",
+  "license_note": "Business Source License 1.1 - Commercial use restricted until 20 February 2030",
+  "inputs": [
+    {
+      "name": "invention_description",
+      "type": "string",
+      "description": "Description détaillée de l’invention"
+    },
+    {
+      "name": "claims",
+      "type": "string",
+      "description": "Revendications initiales (facultatif)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "draft",
+      "type": "string",
+      "description": "Description complète conforme OEB/INPI"
+    },
+    {
+      "name": "patentability_score",
+      "type": "float",
+      "description": "Score de brevetabilité estimé (0-1)"
+    }
+  ],
+  "dependencies": ["nltk>=3.7", "textblob>=0.17.1"],
+  "price": "free",
+  "tags": ["legal", "patent", "oeb", "inpi", "ip", "brevet"]
+}
