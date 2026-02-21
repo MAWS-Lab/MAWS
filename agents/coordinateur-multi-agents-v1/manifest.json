@@ -1,4 +1,6 @@
 {
+  "copyright": "© 2026 NanashiOS-Lab. Tous droits réservés – Nom, logo, slogan protégés",
+"license": "BSL-1.1 - Commercial use restricted until 20 February 2030",
   "id": "coordinateur-multi-agents-v1",
   "name": "Coordinateur Multi-Agents",
   "description": "Orchestre et coordonne plusieurs agents NanashiOS pour accomplir des tâches complexes de manière autonome, synchronisée et souveraine. Gère la répartition des tâches, la communication et le suivi.",
