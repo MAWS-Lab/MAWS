@@ -1,0 +1,36 @@
+{
+  "id": "pulse-logic-v1",
+  "name": "Pulse Logic Agent",
+  "description": "Détecte et analyse les pulsations logiques/temporales dans code, logs ou flux (patterns rythmiques, anomalies, heartbeat). Utile pour Proof of Intelligence et agents autonomes.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "BSL-1.1",
+  "license_note": "Business Source License 1.1 - Commercial use restricted until 20 February 2030",
+  "inputs": [
+    {
+      "name": "data",
+      "type": "string",
+      "description": "Code, logs ou flux à analyser"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "pulse_patterns",
+      "type": "array[string]",
+      "description": "Patterns pulsés détectés"
+    },
+    {
+      "name": "anomalies",
+      "type": "integer",
+      "description": "Nombre d’anomalies rythmiques"
+    },
+    {
+      "name": "heartbeat_status",
+      "type": "string",
+      "description": "Statut heartbeat (normal / irrégulier / absent)"
+    }
+  ],
+  "dependencies": ["pandas>=2.0.0", "scipy>=1.10.0"],
+  "price": "free",
+  "tags": ["logic", "pulse", "anomaly-detection", "temporal-analysis", "poi"]
+}
