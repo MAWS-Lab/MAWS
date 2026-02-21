@@ -1,4 +1,6 @@
 {
+  "copyright": "© 2026 NanashiOS-Lab. Tous droits réservés – Nom, logo, slogan protégés",
+"license": "BSL-1.1 - Commercial use restricted until 20 February 2030",
   "id": "contract-auditor-v1",
   "name": "Contract Auditor Agent",
   "description": "Analyse et audite des contrats légaux ou intelligents pour détecter clauses risquées, incohérences, lacunes juridiques. Utile pour inventeurs, startups et avocats.",
