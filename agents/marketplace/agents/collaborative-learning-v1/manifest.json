@@ -4,7 +4,8 @@
   "description": "Permet à plusieurs agents ou utilisateurs d’apprendre ensemble, partager des connaissances et améliorer leurs modèles localement de manière souveraine (sans cloud central). Style apprentissage fédéré local.",
   "author": "NanashiOS-Lab",
   "version": "1.0.0",
-  "license": "Apache-2.0",
+  "license": "license": "BSL-1.1",
+  "license_note": "Business Source License 1.1 - Commercial use restricted until 20 February 2030",
   "inputs": [
     {
       "name": "local_knowledge",
