@@ -1,4 +1,6 @@
 {
+  "copyright": "© 2026 NanashiOS-Lab. Tous droits réservés – Nom, logo, slogan protégés",
+"license": "BSL-1.1 - Commercial use restricted until 20 February 2030",
   "id": "face-blur-v1",
   "name": "Face Blur Agent",
   "description": "Floute automatiquement les visages dans une image pour protéger la vie privée. Utile pour anonymiser photos avant partage ou stockage.",
