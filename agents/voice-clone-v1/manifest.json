@@ -1,13 +1,14 @@
 {
-  "copyright": "© 2026 NanashiOS-Lab. Tous droits réservés – Nom, logo, slogan protégés",
-"license": "BSL-1.1 - Commercial use restricted until 20 February 2030",
+  "copyright": "© 2026 NanashiOS-Lab. Tous droits réservés. Nom 'NanashiOS', logo 👻🛡️ et slogan protégés.",
+  "license": "BSL-1.1",
+  "license_note": "Business Source License 1.1 - Commercial use restricted until 20 February 2030. Contact: nanashia256@gmail.com",
+  
   "id": "voice-clone-v1",
   "name": "Voice Clone Agent",
-  "description": "Clone une voix à partir d’un échantillon audio court. Utile pour agents vocaux personnalisés, doublage et accessibilité. Fonctionne localement.",
+  "description": "Clone une voix à partir d’un échantillon audio court et synthétise du texte avec SpeechBrain (speaker embedding + TTS). Utile pour agents vocaux personnalisés et accessibilité.",
   "author": "NanashiOS-Lab",
   "version": "1.0.0",
-  "license": "BSL-1.1",
-  "license_note": "Business Source License 1.1 - Commercial use restricted until 20 February 2030",
+  
   "inputs": [
     {
       "name": "audio_sample",
@@ -18,7 +19,12 @@
     {
       "name": "text_to_speak",
       "type": "string",
-      "description": "Texte à synthétiser avec la voix clonée",
+      "description": "Texte à synthétiser avec la voix clonée"
+    },
+    {
+      "name": "emotion",
+      "type": "string",
+      "description": "Emotion optionnelle (neutral, happy, sad, angry)",
       "required": false
     }
   ],
@@ -26,15 +32,15 @@
     {
       "name": "cloned_audio",
       "type": "audio",
-      "description": "Audio cloné"
+      "description": "Chemin vers l'audio cloné"
     },
     {
       "name": "similarity_score",
       "type": "float",
-      "description": "Score de similarité (0-1)"
+      "description": "Score de similarité vocale (0-1)"
     }
   ],
-  "dependencies": ["torchaudio>=2.0.0", "speechbrain>=0.5.0", "librosa>=0.10.0"],
+  "dependencies": ["speechbrain>=0.5.0", "torchaudio>=2.0.0", "torch>=2.0.0"],
   "price": "free",
-  "tags": ["audio", "voice-clone", "synthesis", "privacy", "multimodal"]
+  "tags": ["audio", "voice-clone", "tts", "speaker-embedding", "privacy"]
 }
