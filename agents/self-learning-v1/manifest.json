@@ -1,4 +1,6 @@
 {
+  "copyright": "© 2026 NanashiOS-Lab. Tous droits réservés – Nom, logo, slogan protégés",
+"license": "BSL-1.1 - Commercial use restricted until 20 February 2030",
   "id": "self-learning-v1",
   "name": "Self Learning Agent",
   "description": "Agent d’apprentissage autonome. Apprend de nouvelles tâches à partir d’exemples, mémorise les préférences de l’utilisateur localement, s’améliore avec le temps sans aucun envoi de données.",
