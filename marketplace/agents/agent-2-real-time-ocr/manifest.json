@@ -1,0 +1,32 @@
+{
+  "id": "agent-2-real-time-ocr",
+  "name": "Real-time OCR Agent",
+  "description": "Extrait du texte en temps réel à partir d’une image ou d’une vidéo. Utile pour agents qui lisent du texte dans l’environnement réel.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "BSL-1.1",
+  "license_note": "Business Source License 1.1 - Commercial use restricted until 20 February 2030",
+  "inputs": [
+    {
+      "name": "image",
+      "type": "image",
+      "formats": ["png", "jpg", "jpeg"],
+      "description": "Image ou frame vidéo à analyser"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "extracted_text",
+      "type": "string",
+      "description": "Texte extrait"
+    },
+    {
+      "name": "confidence",
+      "type": "float",
+      "description": "Score de confiance moyen (0-1)"
+    }
+  ],
+  "dependencies": ["pytesseract>=0.3.0", "opencv-python-headless>=4.5.0"],
+  "price": "free",
+  "tags": ["ocr", "text-extraction", "multimodal", "real-time"]
+}
