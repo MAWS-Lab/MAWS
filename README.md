@@ -59,6 +59,7 @@ Framework prêt pour la production avec cache sémantique natif, exécution séc
 - topology-analyzer-v1  
 
 Voir la liste complète et détaillée dans [marketplace/README.md](marketplace/README.md)
+
 Copyright © 2026 NanashiOS-Lab. Tous droits réservés.
 
 Le nom « NanashiOS », le logo (représentant un fantôme 👻 avec bouclier 🛡️), le slogan « Pas de nom. Pas de trace. Contrôle total. » ainsi que l’ensemble du design original, de l’identité visuelle et conceptuelle du projet sont protégés par le droit d’auteur et le droit des marques (marque en cours de dépôt à l’INPI).
