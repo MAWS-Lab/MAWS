@@ -1,0 +1,31 @@
+{
+  "id": "dream-analyzer-v1",
+  "name": "Dream Analyzer Agent",
+  "description": "Analyse les données de sommeil et les rêves à partir d’enregistrements audio ou de journaux. Utile pour agents qui aident à l’interprétation des rêves et à l’amélioration du sommeil.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "BSL-1.1",
+  "license_note": "Business Source License 1.1 - Commercial use restricted until 20 February 2030",
+  "inputs": [
+    {
+      "name": "dream_log",
+      "type": "string",
+      "description": "Journal de rêve ou transcription audio"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "interpretation",
+      "type": "string",
+      "description": "Interprétation des rêves"
+    },
+    {
+      "name": "sleep_quality",
+      "type": "float",
+      "description": "Score de qualité du sommeil (0-1)"
+    }
+  ],
+  "dependencies": ["nltk>=3.7", "textblob>=0.17.1"],
+  "price": "free",
+  "tags": ["dream-analysis", "sleep", "psychology", "personal", "wellness"]
+}
