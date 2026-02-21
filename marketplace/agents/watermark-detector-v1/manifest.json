@@ -1,0 +1,37 @@
+{
+  "id": "watermark-detector-v1",
+  "name": "Watermark Detector Agent",
+  "description": "Détecte les watermarks C2PA, Adobe Content Credentials et autres signatures numériques dans les images et vidéos. Utile pour vérifier l’authenticité des contenus.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "BSL-1.1",
+  "license_note": "Business Source License 1.1 - Commercial use restricted until 20 February 2030",
+  "inputs": [
+    {
+      "name": "media",
+      "type": "image or video",
+      "formats": ["png", "jpg", "jpeg", "mp4"],
+      "description": "Image ou vidéo à analyser"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "has_watermark",
+      "type": "bool",
+      "description": "True si watermark détecté"
+    },
+    {
+      "name": "confidence",
+      "type": "float",
+      "description": "Score de confiance (0-1)"
+    },
+    {
+      "name": "details",
+      "type": "string",
+      "description": "Détails du watermark (C2PA, Adobe, etc.)"
+    }
+  ],
+  "dependencies": ["opencv-python-headless>=4.5.0"],
+  "price": "free",
+  "tags": ["watermark", "c2pa", "authenticity", "anti-deepfake", "verification"]
+}
