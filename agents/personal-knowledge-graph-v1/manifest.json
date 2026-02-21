@@ -4,7 +4,8 @@
   "description": "Gère et interroge un graphe de connaissances personnel local (mémoire souveraine longue durée). Utile pour agents qui se souviennent de l’utilisateur sans cloud.",
   "author": "NanashiOS-Lab",
   "version": "1.0.0",
-  "license": "Apache-2.0",
+  "license": "license": "BSL-1.1",
+  "license_note": "Business Source License 1.1 - Commercial use restricted until 20 February 2030",
   "inputs": [
     {
       "name": "query",
