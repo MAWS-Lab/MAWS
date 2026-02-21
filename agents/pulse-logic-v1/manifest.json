@@ -1,4 +1,6 @@
 {
+  "copyright": "© 2026 NanashiOS-Lab. Tous droits réservés – Nom, logo, slogan protégés",
+"license": "BSL-1.1 - Commercial use restricted until 20 February 2030",
   "id": "pulse-logic-v1",
   "name": "Pulse Logic Agent",
   "description": "Détecte et analyse les pulsations logiques/temporales dans code, logs ou flux (patterns rythmiques, anomalies, heartbeat). Utile pour Proof of Intelligence et agents autonomes.",
