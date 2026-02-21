@@ -4,7 +4,7 @@
   "description": "Résume un texte long en 3-5 phrases ou points clés. Utile pour agents qui traitent documents, mails, articles, logs.",
   "author": "NanashiOS-Lab",
   "version": "1.0.0",
-  "license": "Apache-2.0",
+  "license": 
   "inputs": [
     {
       "name": "text",
