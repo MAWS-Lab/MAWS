@@ -1,2 +1,38 @@
-"license": "BSL-1.1",
+{
+  "id": "voice-clone-v1",
+  "name": "Voice Clone Agent",
+  "description": "Clone une voix à partir d’un échantillon audio court. Utile pour agents vocaux personnalisés, doublage et accessibilité. Fonctionne localement.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "BSL-1.1",
   "license_note": "Business Source License 1.1 - Commercial use restricted until 20 February 2030",
+  "inputs": [
+    {
+      "name": "audio_sample",
+      "type": "audio",
+      "formats": ["wav", "mp3", "ogg"],
+      "description": "Échantillon audio de la voix à cloner (5-30 secondes)"
+    },
+    {
+      "name": "text_to_speak",
+      "type": "string",
+      "description": "Texte à synthétiser avec la voix clonée",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "cloned_audio",
+      "type": "audio",
+      "description": "Audio cloné"
+    },
+    {
+      "name": "similarity_score",
+      "type": "float",
+      "description": "Score de similarité (0-1)"
+    }
+  ],
+  "dependencies": ["torchaudio>=2.0.0", "speechbrain>=0.5.0", "librosa>=0.10.0"],
+  "price": "free",
+  "tags": ["audio", "voice-clone", "synthesis", "privacy", "multimodal"]
+}
