@@ -59,7 +59,20 @@ Framework prêt pour la production avec cache sémantique natif, exécution séc
 - topology-analyzer-v1  
 
 Voir la liste complète et détaillée dans [marketplace/README.md](marketplace/README.md)
+Copyright © 2026 NanashiOS-Lab. Tous droits réservés.
 
+Le nom « NanashiOS », le logo (représentant un fantôme 👻 avec bouclier 🛡️), le slogan « Pas de nom. Pas de trace. Contrôle total. » ainsi que l’ensemble du design original, de l’identité visuelle et conceptuelle du projet sont protégés par le droit d’auteur et le droit des marques (marque en cours de dépôt à l’INPI).
+
+Le code source et les agents publiés dans ce dépôt sont soumis à la licence **Business Source License 1.1** (BSL 1.1) depuis le 21 février 2026.
+
+**Utilisation commerciale** (y compris mais sans s’y limiter : SaaS, revente, intégration dans un service payant, cloud, application commerciale, fork à but lucratif, rebranding pour exploitation marchande) est strictement interdite jusqu’au 20 février 2030 sans licence commerciale préalable et écrite de NanashiOS-Lab.
+
+Contact pour toute demande de licence commerciale ou autorisation :  
+nanashia256@gmail.com
+
+Toute reproduction, distribution, modification ou exploitation non autorisée du nom, logo, slogan, design ou contenu protégé sera poursuivie conformément au Code de la propriété intellectuelle français et européen.
+
+Les versions antérieures au 21 février 2026 restaient sous licence Apache 2.0. À partir de cette date, BSL 1.1 s’applique à toutes les contributions et évolutions.
 ---
 
 ### Installation rapide
