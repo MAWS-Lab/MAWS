@@ -1,0 +1,38 @@
+{
+  "id": "face-blur-v1",
+  "name": "Face Blur Agent",
+  "description": "Floute automatiquement les visages dans une image pour protéger la vie privée. Utile pour anonymiser photos avant partage ou stockage.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "BSL-1.1",
+  "license_note": "Business Source License 1.1 - Commercial use restricted until 20 February 2030",
+  "inputs": [
+    {
+      "name": "image",
+      "type": "image",
+      "formats": ["png", "jpg", "jpeg"],
+      "description": "Image à anonymiser"
+    },
+    {
+      "name": "blur_strength",
+      "type": "integer",
+      "description": "Intensité du flou (1-10, défaut 5)",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "blurred_image",
+      "type": "image",
+      "description": "Image avec visages floutés"
+    },
+    {
+      "name": "faces_detected",
+      "type": "integer",
+      "description": "Nombre de visages détectés et floutés"
+    }
+  ],
+  "dependencies": ["opencv-python-headless>=4.5.0", "face_recognition>=1.3.0"],
+  "price": "free",
+  "tags": ["image", "privacy", "face-blur", "anonymization", "sovereign"]
+}
