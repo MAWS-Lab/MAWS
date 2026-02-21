@@ -4,7 +4,8 @@
   "description": "Analyse et audite des contrats légaux ou intelligents pour détecter clauses risquées, incohérences, lacunes juridiques. Utile pour inventeurs, startups et avocats.",
   "author": "NanashiOS-Lab",
   "version": "1.0.0",
-  "license": "Apache-2.0",
+  "license": "license": "BSL-1.1",
+  "license_note": "Business Source License 1.1 - Commercial use restricted until 20 February 2030",
   "inputs": [
     {
       "name": "contract_text",
