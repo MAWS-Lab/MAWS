@@ -1,4 +1,5 @@
 {
+  Ajout clause BSL 1.1 et copyright dans manifest.json
   "id": "collaborative-learning-v1",
   "name": "Collaborative Learning Agent",
   "description": "Permet à plusieurs agents ou utilisateurs d’apprendre ensemble, partager des connaissances et améliorer leurs modèles localement de manière souveraine (sans cloud central). Style apprentissage fédéré local.",
