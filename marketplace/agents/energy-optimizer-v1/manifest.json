@@ -1,0 +1,37 @@
+{
+  "id": "energy-optimizer-v1",
+  "name": "Energy Optimizer Agent",
+  "description": "Optimise la consommation énergétique des agents et processus locaux (CPU, GPU, mémoire, batterie). Utile pour agents qui tournent 24/7 sur hardware limité.",
+  "author": "NanashiOS-Lab",
+  "version": "1.0.0",
+  "license": "BSL-1.1",
+  "license_note": "Business Source License 1.1 - Commercial use restricted until 20 February 2030",
+  "inputs": [
+    {
+      "name": "current_usage",
+      "type": "float",
+      "description": "Consommation énergétique actuelle (en watts ou pourcentage)"
+    },
+    {
+      "name": "process_list",
+      "type": "array[string]",
+      "description": "Liste des processus actifs",
+      "required": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "optimization_plan",
+      "type": "string",
+      "description": "Plan d'optimisation recommandé"
+    },
+    {
+      "name": "estimated_savings",
+      "type": "float",
+      "description": "Économies estimées (%)"
+    }
+  ],
+  "dependencies": ["psutil>=5.9.0"],
+  "price": "free",
+  "tags": ["energy", "optimization", "efficiency", "sustainability", "resource-management"]
+}
