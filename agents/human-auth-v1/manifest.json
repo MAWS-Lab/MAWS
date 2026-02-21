@@ -4,7 +4,8 @@
   "description": "Vérifie si un texte est écrit par un humain ou généré par IA (score 0-1). Utile pour anti-deepfake, vérification emails, contenus authentiques. Local et sovereign.",
   "author": "NanashiOS-Lab",
   "version": "1.0.0",
-  "license": "Apache-2.0",
+  "license": "license": "BSL-1.1",
+  "license_note": "Business Source License 1.1 - Commercial use restricted until 20 February 2030",
   "inputs": [
     {
       "name": "text",
